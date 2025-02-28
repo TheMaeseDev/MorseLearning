@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoseCode", "MoseCode\MoseCode.csproj", "{CB990490-7123-4BE4-99F8-E91CB3F0D26E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MorseApp", "MoseCode\MorseApp.csproj", "{CB990490-7123-4BE4-99F8-E91CB3F0D26E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

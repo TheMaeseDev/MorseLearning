@@ -1,12 +1,23 @@
-﻿<Window x:Class="MoseCode.MainWindow"
+﻿<Window x:Class="MorseApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MoseCode"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Morse Code Trainer" Height="400" Width="400"
+        KeyDown="Window_KeyDown" KeyUp="Window_KeyUp">
 
-    </Grid>
+    <Canvas Background="Black">
+        <!-- Nodo de Entrada -->
+        <Ellipse Name="entradaNodo" Width="30" Height="30" Fill="Gray" Canvas.Left="185" Canvas.Top="50"/>
+
+        <!-- Línea a Punto -->
+        <Line X1="200" Y1="80" X2="120" Y2="150" Stroke="White" StrokeThickness="2"/>
+        <!-- Nodo Punto -->
+        <Ellipse Name="puntoNodo" Width="30" Height="30" Fill="Gray" Canvas.Left="105" Canvas.Top="150"/>
+        <TextBlock Text="E" Foreground="White" FontSize="16" Canvas.Left="140" Canvas.Top="155"/>
+
+        <!-- Línea a Raya -->
+        <Line X1="200" Y1="80" X2="280" Y2="150" Stroke="White" StrokeThickness="2"/>
+        <!-- Nodo Raya -->
+        <Rectangle Name="rayaNodo" Width="50" Height="30" Fill="Gray" RadiusX="10" RadiusY="10" Canvas.Left="265" Canvas.Top="150"/>
+        <TextBlock Text="T" Foreground="White" FontSize="16" Canvas.Left="325" Canvas.Top="155"/>
+    </Canvas>
 </Window>
